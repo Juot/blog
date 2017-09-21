@@ -15,8 +15,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from article import views
+from django.conf.urls import include
+
 urlpatterns = [
 
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', views.home),
-    ]
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', views.home, name = 'home'),
+    url(r'^(?P<id>\d+)/$', views.detail, name='detail'),
+]
