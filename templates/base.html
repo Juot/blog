@@ -2,32 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″>
 <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
 
-    <title>{% block title %} Andrew Liu Blog {% endblock %}</title>
-    <link rel="stylesheet" href="http://labfile.oss.aliyuncs.com/courses/487/pure-min.css">
-    <link rel="stylesheet" href="http://labfile.oss.aliyuncs.com/courses/487/grids-responsive-min.css">
-    <link rel="stylesheet" href="http://labfile.oss.aliyuncs.com/courses/487/blog.css">
-    <link rel="stylesheet" href="http://labfile.oss.aliyuncs.com/courses/487/monokai.css">
+    <title>{% block title %} Juot Blog {% endblock %}</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
+    <link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
 </head>
+<body>
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
-            <h1 class="brand-title">Juot Blog</h1>
-            <h2 class="brand-tagline">Just do it !</h2>
+            <h1 class="brand-title"><a href="{% url 'home' %}">Juot Blog</a></h1>
+            <h2 class="brand-tagline">飞头狼-Just do it!</h2>
             <nav class="nav">
+<!---->
+                <ul>
+            <li><i class="el-cloud"></i>
+                <iframe  scrolling="no" frameborder="0" allowtransparency="true" width="250" height="25" src="http://i.tianqi.com/index.php?c=code&amp;a=getcode&amp;id=34&amp;h=25i&amp;w=280"></iframe>
+            </li>
+
+            <li><i class="el-calendar"></i>
+                <iframe src="http://www.todayonhistory.com/code/6.html?w=750&amp;h=20&amp;bky=dotted&amp;bks=0&amp;fs=14&amp;fc=#FFFFFF&amp;hg=14&amp;ie=0&amp;xhx=none&amp;sd=300&amp;px=3&amp;len=0&amp;sk=1&amp;n=0" width="350" height="15" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+            </li>
+        </ul>
+<!---->
                 <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="/">主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="{% url 'archives' %}">归档</a>
+                    </li>
                     <li class="nav-item">
                         <a class="pure-button" href="https://github.com/Juot">Github</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pure-button" href="http://weibo.com/3443790114">Weibo</a>
+                        <a class="button-error pure-button" href="http://weibo.com/3443790114">微博</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="/">专题</a>
+                    </li>
+                    <li>
+                    <form class="pure-form" action="/search/" method="get">
+                    <input class="pure-input-2-3" type="text" name="s" placeholder="search">
+                    </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="{% url 'about_me' %}">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="{% url 'RSS' %}">RSS</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
+
 
     <div class="content pure-u-1 pure-u-md-3-4">
         <div>
@@ -45,6 +78,7 @@
         </div>
     </div>
 </div>
+
 
 </body>
 </html>
