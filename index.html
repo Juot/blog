@@ -1,0 +1,1428 @@
+
+<!DOCTYPE HTML>
+
+<html> 
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8,ie=7">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta itemprop="image" content="http://www.zbboke.com/templets/boke/images/logo.png">
+
+    <meta name="baidu-site-verification" content="vZpksoimkY" />
+
+   <meta name="wlhlauth" content="3c53c38ac65f3824cc4fd2352b39b930"/> <!--站长资源认证-->
+
+
+
+   <title>张兵个人博客 - 一个界面简洁清爽好看的个人博客网站</title>
+
+
+
+<meta name="keywords" content="个人博客,好看的博客,张兵,张兵博客,张兵个人博客" />
+
+<meta name="description" content="张兵个人博客是一个分享前端学习资料的博客型网站,与广大前端爱好者一起分享最新技术,一起解决所遇到的问题.还会分享很多有趣的段子,欢迎大家留言！" />
+
+
+
+
+
+    <link rel='stylesheet' id='open_social_css-css' href='/templets/boke/css/os.css' type='text/css' media='all' />
+
+    <link rel="stylesheet" href="/templets/boke/css/style.css" media="all">
+
+    <link rel="stylesheet" href="/templets/boke/css/swiper.min.css" media="all">
+
+    <link href="/templets/boke/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript" src="/templets/boke/js/base.loading.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+  </head>
+
+  
+
+  <body class="home blog">
+
+    <div class="placeholder"></div>     
+
+<!--[if lt IE 9]>
+
+  <script src="/templets/boke/js/html5.js"></script>
+
+<![endif]-->
+
+<script src="/templets/boke/js/jquery.js"></script>
+
+<script>window._deel = {
+
+    maillist: '',
+
+    maillistCode: '',
+
+    commenton: 0,
+
+    roll: [0, 0]
+
+  }</script>
+
+<script type="text/javascript">$(function() {
+
+    $(window).scroll(function() {
+
+      $offset = $('.placeholder').offset(); //不能用自身的div，不然滚动起来会很卡
+
+      if ($(window).scrollTop() > $offset.top) {
+
+        $('.header').css({
+
+          'position': 'fixed',
+
+          'top': '0px',
+
+          'left': $offset.left + 'px',
+
+          'z-index': '999'
+
+        });
+
+        $(".container").css({
+
+          "margin-top": "93px"
+
+        });
+
+      } else {
+
+        $('.header').removeAttr('style');
+
+        $('.container').removeAttr('style');
+
+      }
+
+    });
+
+  })
+
+</script>   
+
+<!--头部开始-->
+
+<header class="header" style="height: 52px;">
+
+  <div class="navbar">
+
+    <p class="logo" >
+
+      <a href="/" title="张兵" alt="张兵">张兵个人博客_张兵博客</a></p>
+
+    <ul class="nav">
+
+     
+
+     
+
+       <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home"><a href="/">首页</a></li>
+
+       
+
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+
+        <a href="/about/">关于</a>
+
+        <ul class="sub-menu">
+
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/about/">关于我</a></li>
+
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/lxw/">友链互换</a></li>
+
+        </ul></li>  
+
+<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home"><a href="/cz/">成长</a></li>
+
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+
+        <a href="/xx/">学习</a>
+
+        <ul class="sub-menu">
+
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/xx/php/">php</a></li>
+
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/xx/html/">html</a></li>
+
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/xx/css/">css</a></li>
+
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/xx/ajax/">ajax</a></li>
+
+         <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a title="Dreamweaver" href="/xx/Dreamweaver/">Dreamw..</a></li>
+
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="/xx/Javascript/">JavaScript</a></li>
+
+        </ul></li>  
+
+         
+
+      
+
+            
+
+    　　<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="/tp/">娱乐</a></li>
+
+       
+
+                  
+
+      
+
+   
+
+            
+
+    　　<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="/yl/">说说</a> </li>
+
+       
+
+   
+
+       
+
+            
+
+    　　<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="/ly/">留言</a></li>
+
+       
+
+         
+
+     
+
+   
+
+     
+
+            
+
+    </ul>
+
+      <div class="menu pull-right">
+
+        <form name="formsearch" action="/plus/search.php" method="get">
+
+
+
+      <input class="search-input" name="q" type="text" id="search-keyword" value="" required="required"  placeholder=" 输入你要找的内容"  />
+
+        
+
+
+
+        <button type="submit" class="searchbtn search-submit" name="search" title="搜一下">
+
+       
+
+          
+
+
+
+          <i class="fa"></i>
+
+        </button>
+
+      </form>
+
+      
+
+    </div>
+
+    </div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var _hmt = _hmt || [];
+
+(function() {
+
+  var hm = document.createElement("script");
+
+  hm.src = "//hm.baidu.com/hm.js?7c0f70e6d8aaeb8ec75e153de1c7b516";
+
+  var s = document.getElementsByTagName("script")[0]; 
+
+  s.parentNode.insertBefore(hm, s);
+
+})();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--头部结束-->
+
+    
+
+<script type="text/javascript" src="/templets/boke/js/swiper.min.js"></script>  
+
+    <section class="container">
+
+      <div class="banner banner-navbar">
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+
+
+
+                                         <div class="swiper-slide"><img src="/templets/boke/picture/banner.gif" alt="张兵博客"></div>
+
+                    <div class="swiper-slide"><img src="/templets/boke/picture/banner_1.jpg" alt="张兵博客"></div>
+
+                    
+
+                    <div class="swiper-slide"><img src="/templets/boke/picture/banner_3.jpg" alt="张兵博客"></div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-button-prev"></div>
+
+            </div>
+
+      </div>
+
+    <script>
+
+        var swiper = new Swiper('.swiper-container', {
+
+            pagination: '.swiper-pagination',
+
+            nextButton: '.swiper-button-next',
+
+            prevButton: '.swiper-button-prev',
+
+            paginationClickable: true,
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: 8000,
+
+            autoplayDisableOnInteraction: false,
+
+            loop: true
+
+        });
+
+    </script>
+
+      <div class="content-wrap">
+
+        <div class="content">
+
+          <div class="sticky">
+
+            <h2 class="title">特别推荐</h2>
+
+            <ul>
+
+            
+
+            
+
+            <li class="item"><a href="/tp/687.html" target="_blank">
+
+                  <img src="/uploads/161021/1-161021195620547.jpg" alt="为什么男人喜欢绿茶表,这让女汉子如何活呀……" />
+
+                  <h3>为什么男人喜欢绿茶表,这让女汉子如何活呀……</h3>
+
+                  <p class="muted">今天咱们来谈谈绿茶婊 绿茶婊 泛指那些外表清新脱俗， 内心工于心计的女子。 很多妹纸在后台哭诉， 为什么好男人都喜欢绿茶婊？ 她都骚的那么明显了为什么男人还觉得纯？ 男人为...</p></a></li>
+
+<li class="item"><a href="/xx/Javascript/740.html" target="_blank">
+
+                  <img src="/uploads/170916/1-1F9161F413H6.jpg" alt="什么是变量,数据类型有哪些？" />
+
+                  <h3>什么是变量,数据类型有哪些？</h3>
+
+                  <p class="muted">什么是变量 变量就是储存数据的空间。 变量的规范命名： 1.字下美人其后数 2.不可以使用关键词 3.不可以重复定义 4.首字母小写，其后首字母大写，还要见名知意。 变量的步骤： 先声...</p></a></li>
+
+<li class="item"><a href="/cz/719.html" target="_blank">
+
+                  <img src="/uploads/161125/1-1611251H645N2.jpg" alt="【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力.满满的正能量" />
+
+                  <h3>【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力.满满的正能量</h3>
+
+                  <p class="muted">还有人问我，凭什么就说钱是人的胆？ 尊严大于一切!有尊严就有活着的意义!没钱也可以有尊严，你这是悖论，当你的孩子看到一样东西露出渴求的眼神，你问他想不想要，他“乖巧懂事”的回...</p></a></li>
+
+<li class="item"><a href="/cz/709.html" target="_blank">
+
+                  <img src="/uploads/161114/1-1611141G542649.jpg" alt="今年我二十七八岁" />
+
+                  <h3>今年我二十七八岁</h3>
+
+                  <p class="muted">我今年二十七八岁 不再乱买东西 月底开始算计 还了信用卡 开销多少 还剩下多少 该开始攒钱买房子了 我今年二十七八岁 偶尔会有寂寞 偶尔会挂念一个人 我今年二十七八岁 我开始追...</p></a></li>
+
+<li class="item"><a href="/cz/720.html" target="_blank">
+
+                  <img src="/uploads/161125/1-1611251H645N2.jpg" alt="【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊" />
+
+                  <h3>【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊</h3>
+
+                  <p class="muted">　一个人很丑，有个很漂亮的老婆，这个人一定不简单，一是营销能力强；二是心理战术一定不错。不要去诋毁人家，多向人家学习。
+
+...</p></a></li>
+
+<li class="item"><a href="/xx/Javascript/739.html" target="_blank">
+
+                  <img src="/uploads/170826/1-1FR6151911922.jpg" alt="Java课程第一课，安装Java环境（jdk、jre）和实现第一个Java程序" />
+
+                  <h3>Java课程第一课，安装Java环境（jdk、jre）和实现第一个Java程序</h3>
+
+                  <p class="muted">我（张兵）给自己规划的人生，从网络营销的专业细化到Web-前端的职业,再从前端的职业回归到Java的专业，中间的抉择、辛酸是离不开家人的支持与理解。当给自己定下确立的目标后，...</p></a></li>
+
+     
+
+               
+
+               
+
+               
+
+                        </ul>
+
+          </div>
+
+          <h2 class="title">最新发布</h2>
+
+          
+
+          <article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/tp/687.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/161021/1-161021195620547.jpg" alt="为什么男人喜欢绿茶表,这让女汉子如何活呀……" title="为什么男人喜欢绿茶表,这让女汉子如何活呀……"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/tp/687.html" title="为什么男人喜欢绿茶表,这让女汉子如何活呀……" target="_blank">为什么男人喜欢绿茶表,这让女汉子如何活呀……</a></h2>
+
+            </header>
+
+            <p class="note">今天咱们来谈谈绿茶婊 绿茶婊 泛指那些外表清新脱俗， 内心工于心计的女子。 很多妹纸在后台哭诉， 为什么好男人都喜欢绿茶婊？ 她都骚的那么明显了为什么男人还觉得纯？ 男人为...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-09-25</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  1083次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/xx/Javascript/740.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/170916/1-1F9161F413H6.jpg" alt="什么是变量,数据类型有哪些？" title="什么是变量,数据类型有哪些？"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/xx/Javascript/740.html" title="什么是变量,数据类型有哪些？" target="_blank">什么是变量,数据类型有哪些？</a></h2>
+
+            </header>
+
+            <p class="note">什么是变量 变量就是储存数据的空间。 变量的规范命名： 1.字下美人其后数 2.不可以使用关键词 3.不可以重复定义 4.首字母小写，其后首字母大写，还要见名知意。 变量的步骤： 先声...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-09-16</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  171次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/cz/719.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/161125/1-1611251H645N2.jpg" alt="【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力.满满的正能量" title="【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力.满满的正能量"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/cz/719.html" title="【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力.满满的正能量" target="_blank">【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力.满满的正能量</a></h2>
+
+            </header>
+
+            <p class="note">还有人问我，凭什么就说钱是人的胆？ 尊严大于一切!有尊严就有活着的意义!没钱也可以有尊严，你这是悖论，当你的孩子看到一样东西露出渴求的眼神，你问他想不想要，他“乖巧懂事”的回...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-08-27</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  285次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/cz/709.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/161114/1-1611141G542649.jpg" alt="今年我二十七八岁" title="今年我二十七八岁"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/cz/709.html" title="今年我二十七八岁" target="_blank">今年我二十七八岁</a></h2>
+
+            </header>
+
+            <p class="note">我今年二十七八岁 不再乱买东西 月底开始算计 还了信用卡 开销多少 还剩下多少 该开始攒钱买房子了 我今年二十七八岁 偶尔会有寂寞 偶尔会挂念一个人 我今年二十七八岁 我开始追...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-08-27</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  1110次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/cz/720.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/161125/1-1611251H645N2.jpg" alt="【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊" title="【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/cz/720.html" title="【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊" target="_blank">【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊</a></h2>
+
+            </header>
+
+            <p class="note">　一个人很丑，有个很漂亮的老婆，这个人一定不简单，一是营销能力强；二是心理战术一定不错。不要去诋毁人家，多向人家学习。
+
+...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-08-27</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  275次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/xx/Javascript/739.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/170826/1-1FR6151911922.jpg" alt="Java课程第一课，安装Java环境（jdk、jre）和实现第一个Java程序" title="Java课程第一课，安装Java环境（jdk、jre）和实现第一个Java程序"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/xx/Javascript/739.html" title="Java课程第一课，安装Java环境（jdk、jre）和实现第一个Java程序" target="_blank">Java课程第一课，安装Java环境（jdk、jre）和实现第一个Java程序</a></h2>
+
+            </header>
+
+            <p class="note">我（张兵）给自己规划的人生，从网络营销的专业细化到Web-前端的职业,再从前端的职业回归到Java的专业，中间的抉择、辛酸是离不开家人的支持与理解。当给自己定下确立的目标后，...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-08-26</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  162次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/cz/735.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/170329/1-1F329112030649.jpg" alt="如何增加网站的点击率？—信息推送" title="如何增加网站的点击率？—信息推送"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/cz/735.html" title="如何增加网站的点击率？—信息推送" target="_blank">如何增加网站的点击率？—信息推送</a></h2>
+
+            </header>
+
+            <p class="note">这是一篇教程，手把手的教你如何将网站的信息推送给所有的订阅者！ 这个信息推送功能，它将会大大的提升你网站的的曝光度与点击率！ 下面这张图，是我把工具安装在我博客之后...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-03-29</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  296次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/tp/734.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/170311/1-1F3111PJI09.png" alt="工作压力大? 玩点JavaScript在线小游戏缓解下吧！(仅支持PC)" title="工作压力大? 玩点JavaScript在线小游戏缓解下吧！(仅支持PC)"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/tp/734.html" title="工作压力大? 玩点JavaScript在线小游戏缓解下吧！(仅支持PC)" target="_blank">工作压力大? 玩点JavaScript在线小游戏缓解下吧！(仅支持PC)</a></h2>
+
+            </header>
+
+            <p class="note">那一年，我9岁，她11岁， 我告诉她将来要娶她，她也很调皮的回答我：好啊! 那一年，我14岁，她16岁， 她高我一头，我抬着头说我喜欢她， 她怔怔听着，没说话，便转过头去，不再望...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-03-13</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  280次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/xx/733.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/170208/1-1F20QT0555I.jpg" alt="[详细教程]如何购买域名和虚拟服务器。" title="[详细教程]如何购买域名和虚拟服务器。"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/xx/733.html" title="[详细教程]如何购买域名和虚拟服务器。" target="_blank">[详细教程]如何购买域名和虚拟服务器。</a></h2>
+
+            </header>
+
+            <p class="note">如何购买域名和服务器？买什么样的虚拟服务器好？对于建站的新手朋友肯定是一个困扰，那么接下来我把我自己觉得不错的主机和购买教程分享给大家，如果明白的朋友可以直接跳过...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-02-08</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  405次浏览</span>
+
+            </p>
+
+          </article>
+
+<article class="excerpt">
+
+            <div class="focus">
+
+              <a href="/tp/731.html" class="thumbnail" target="_blank">
+
+                <img src="/uploads/170118/1-1F11Q3462cB.jpg" alt="最伤人的话，总出自最温柔的嘴" title="最伤人的话，总出自最温柔的嘴"/></a>
+
+            </div>
+
+            <header>
+
+              <h2>
+
+                <a href="/tp/731.html" title="最伤人的话，总出自最温柔的嘴" target="_blank">最伤人的话，总出自最温柔的嘴</a></h2>
+
+            </header>
+
+            <p class="note">我以神的姿态，闪耀在这美的瞬间~...</p>
+
+            <p>
+
+              <span class="muted">
+
+                <i class="icon-user icon12"></i> 张兵 </span>
+
+              <span class="muted">
+
+                <i class="ico icon-time icon12"></i> 2017-01-18</span>
+
+              <span class="muted">
+
+                <i class="ico icon-eye-open icon12"></i>  307次浏览</span>
+
+            </p>
+
+          </article>
+
+  
+
+            
+
+              
+
+        </div>
+
+      </div>
+
+      </div>
+
+      <aside class="sidebar">
+
+        <div class="widget">
+
+          <h3 class="widget_tit">热门标签</h3>
+
+          <div class="tag_list">
+
+            <ul>
+
+
+
+
+
+
+
+
+
+     <li><a href="/plus/search.php?q=ajax&search=" target="_blank">ajax</a></li>
+
+            <li><a href="/plus/search.php?q=Dreamweaver&search=" target="_blank">Dreamweaver</a></li>
+
+            <li><a href="/plus/search.php?q=html&search=" target="_blank">html</a></li>
+
+            <li><a href="/plus/search.php?q=js&search=" target="_blank">js</a></li>
+
+            <li><a href="/plus/search.php?q=css&search=" target="_blank">css</a></li>
+
+            <li><a href="/plus/search.php?q=css&search=" target="_blank">搞笑</a></li>
+
+            <li><a href="/plus/search.php?q=娱乐&search=" target="_blank">娱乐</a></li>
+
+            <li><a href="/plus/search.php?q=MySQL&search=" target="_blank">MySQL</a></li>
+
+            <li><a href="/plus/search.php?q=PHP&search=" target="_blank">PHP</a></li>
+
+            <li><a href="/plus/search.php?q=dedeCMS&search=" target="_blank">dedeCMS</a></li>
+
+            <li><a href="/plus/search.php?q=张兵&search=" target="_blank">张兵</a></li>
+
+            <li><a href="/plus/search.php?q=博客&search=" target="_blank">博客</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>    
+
+        <div class="widget d_postlist">
+
+          <h3 class="widget_tit">推荐文章</h3>
+
+          <ul>
+
+          
+
+          <li><a href="/tp/687.html">
+
+                <span class="thumbnail">
+
+                  <img src="/uploads/161021/1-161021195620547.jpg" alt="为什么男人喜欢绿茶表,这让女汉子如何活呀……" title="为什么男人喜欢绿茶表,这让女汉子如何活呀……"/></span>
+
+                <span class="text">为什么男人喜欢绿茶表,这让女汉子如何活呀……</span>
+
+                <span class="muted">2017-09-25</span>
+
+                <span class="muted">
+
+                  <span class="ds-thread-count" data-replace="1">1083次阅读</span>
+
+                </span>
+
+              </a></li>
+
+<li><a href="/xx/Javascript/740.html">
+
+                <span class="thumbnail">
+
+                  <img src="/uploads/170916/1-1F9161F413H6.jpg" alt="什么是变量,数据类型有哪些？" title="什么是变量,数据类型有哪些？"/></span>
+
+                <span class="text">什么是变量,数据类型有哪些？</span>
+
+                <span class="muted">2017-09-16</span>
+
+                <span class="muted">
+
+                  <span class="ds-thread-count" data-replace="1">171次阅读</span>
+
+                </span>
+
+              </a></li>
+
+<li><a href="/cz/719.html">
+
+                <span class="thumbnail">
+
+                  <img src="/uploads/161125/1-1611251H645N2.jpg" alt="【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力" title="【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力"/></span>
+
+                <span class="text">【力荐】一个北漂五年的人告诉你，为什么二十多岁的你要努力</span>
+
+                <span class="muted">2017-08-27</span>
+
+                <span class="muted">
+
+                  <span class="ds-thread-count" data-replace="1">285次阅读</span>
+
+                </span>
+
+              </a></li>
+
+<li><a href="/cz/709.html">
+
+                <span class="thumbnail">
+
+                  <img src="/uploads/161114/1-1611141G542649.jpg" alt="今年我二十七八岁" title="今年我二十七八岁"/></span>
+
+                <span class="text">今年我二十七八岁</span>
+
+                <span class="muted">2017-08-27</span>
+
+                <span class="muted">
+
+                  <span class="ds-thread-count" data-replace="1">1110次阅读</span>
+
+                </span>
+
+              </a></li>
+
+<li><a href="/cz/720.html">
+
+                <span class="thumbnail">
+
+                  <img src="/uploads/161125/1-1611251H645N2.jpg" alt="【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊" title="【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊"/></span>
+
+                <span class="text">【力荐】年轻的时候为什么不努力就是在犯罪,接着上次的聊</span>
+
+                <span class="muted">2017-08-27</span>
+
+                <span class="muted">
+
+                  <span class="ds-thread-count" data-replace="1">275次阅读</span>
+
+                </span>
+
+              </a></li>
+
+  
+
+               </ul>
+
+        </div>
+
+    
+
+
+
+        
+
+            <style>
+
+        .rmpl{
+
+            
+
+        
+
+        padding: 11px 15px 14px;
+
+    border-bottom: 1px solid #eaeaea;
+
+    background-color: #fbfbfb;
+
+    font-weight: 400;
+
+    font-size: 18px;
+
+    line-height: 20px;
+
+
+
+            
+
+            
+
+            }
+
+        .pinglun{
+
+            
+
+              
+
+            background:#fff;
+
+            
+
+            
+
+            
+
+            }
+
+
+
+#cyHotusers{width:290px;height: 393px;
+
+    overflow: hidden;}
+
+#cyHotusers .hotusers-header{padding:0px !important;}
+
+        </style>
+
+        <div class="pinglun"  style="border-radius:5px;      box-shadow: 0 1px 3px rgba(0, 0, 0, .1);">
+
+     <h3 class="rmpl">热评评论</h3>
+
+<!-- 代码1：放在页面需要展示的位置  -->
+
+<!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
+
+<div id="cyReping" role="cylabs" data-use="reping"></div>
+
+<!-- 代码2：用来读取评论框配置，此代码需放置在代码1之后。 -->
+
+<!-- 如果当前页面有评论框，代码2请勿放置在评论框代码之前。 -->
+
+<!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
+
+<script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cyso1pvoU"></script>
+
+
+
+  </div>
+
+        
+
+ 
+
+
+
+        
+
+        
+
+        <div class="widget d_textbanner" style=" margin-top:10px;    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);">
+
+            
+
+<a class="style03" target="_blank" style="padding-bottom:0;">
+
+            <strong>统计</strong>
+
+            </a>
+
+            <p class="ys">
+
+<span class="ys1" id="showDays"></span>
+
+
+
+<span class="ys1">本月更新：<strong style="color:#f00;">558</strong> 篇</span>
+
+<span class="ys1">共有文章： <strong style="color:#f00;">705</strong> 篇</span>
+
+<span class="ys1" style="padding-bottom:20px;"></span></span></span></span>
+
+
+
+
+
+<style>
+
+.ys{width:90%;margin-left:5%; margin-right:5%;}
+
+.ys1{width:60%; font-size:16px; line-height:30px;display:block; margin:auto;}
+
+</style>
+
+
+
+
+
+
+
+
+
+            </p>
+
+            
+
+        </div>          
+
+
+
+<script>
+
+var birthDay = new Date("09/17/2016");  // 这里填写网站第一次运行日期
+
+var now = new Date();
+
+var duration = now.getTime() - birthDay.getTime(); 
+
+var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+
+total = "<strong style='color:red;'>" + total + "</strong >";
+
+document.getElementById("showDays").innerHTML = "本站运行："+total+"天"; //这里就是总运行天数
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+        <div class="widget d_textbanner" style=" margin-top:10px;    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);">
+
+    <a class="style03" target="_blank">     
+
+        <strong>分享</strong>
+
+            
+
+
+
+</a>
+
+
+
+<div class="bdsharebuttonbox">
+
+<a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+        
+
+<style>
+
+.bdshare-button-style0-32 a{    padding: 0 3px 3px; min-height:32px; }
+
+.bdsharebuttonbox{margin-left:10px;}
+
+</style>
+
+
+
+        </div>      
+
+
+
+
+
+
+
+        <div class="widget d_textbanner" style="margin-top:10px; float: left; width:290px; min-height: 110px;box-shadow: 0 1px 3px rgba(0, 0, 0, .1);">
+
+                    <a class="style03" href="/lxw/"><strong>申请链接</strong></a>
+
+                    <!--友联的width是290px 每个的宽度290/2 = 145； 145-120=25/2=12.5-->
+
+
+
+                    <ul class="friendlyLink">
+
+
+
+                        <li><a href='http://www.zhouqiuju.com/' target='_blank'>周秋菊个人博客</a> </li><li><a href='http://www.wangmingjie.net' target='_blank'>web前端技术分享</a> </li><li><a href='http://www.scever.com' target='_blank'>个人博客</a> </li><li><a href='http://www.xiaoshuangyu.com' target='_blank'>小双鱼博客</a> </li><li><a href='http://www.mywhblog.cn/' target='_blank'>梦影雾花个人博客</a> </li><li><a href='http://www.2asp.cn' target='_blank'>php学习</a> </li><li><a href='http://www.liqinghe.com/' target='_blank'>java程序员个人博客</a> </li><li><a href='http://www.qiaoboke.com' target='_blank'>陈巧丽个人博客</a> </li><li><a href='http://www.yinhuafeng.cn/' target='_blank'>尹华峰博客</a> </li><li><a href='http://www.zhiniao365.com' target='_blank'>知鸟个人博客</a> </li><li><a href='http://www.wangyangkang.com' target='_blank'>seo技术</a> </li><li><a href='http://www.llsffx.com' target='_blank'>厦门网站优化</a> </li><li><a href='http://www.chenmin.biz/' target='_blank'>陈敏个人网站</a> </li><li><a href='http://www.iwuhe.cn' target='_blank'>衍帝博客</a> </li><li><a href='http://gunianwen.com/' target='_blank'>顾念文笔博客</a> </li><li><a href='http://www.bobcoder.cc' target='_blank'>Bob的博客</a> </li><li><a href='http://www.01qd.cc' target='_blank'>小清新</a> </li><li><a href='http://www.loveif.com' target='_blank'>晓兔个人博客</a> </li><li><a href='http://nifangbian.com' target='_blank'>你方便营销</a> </li><li><a href='http://www.huaovo.cn/' target='_blank'>华从博客</a> </li><li><a href='http://www.95o9.com' target='_blank'>小8博客</a> </li><li><a href='http://www.seozhh.com/' target='_blank'>seo优化培训</a> </li><li><a href='http://www.hatet.vip' target='_blank'>淮安天恩堂</a> </li>
+
+                    </ul>
+
+                </div>  
+
+                                    <style>
+
+                                             .bdsharebuttonbox {
+
+                            margin-left: 10px;
+
+                        }
+
+                                            .friendlyLink{
+
+                                                float: left; width:290px; min-height: 110px;
+
+                                                }
+
+                                       .friendlyLink a{
+
+                            display: block;
+
+                            width: 118px;
+
+                            height: 35px;
+
+                            float: left;
+
+                            border: 1px #5CB85C solid;
+
+                            padding: 0px !important;
+
+                            line-height: 35px;
+
+                            text-align: center;
+
+                            color: #5CB85C;
+
+                            transition: all 0.5s;
+
+                            margin: 0px 12.5px 10px 12.5px;
+
+                        }
+
+                        
+
+                        .friendlyLink li a:hover {
+
+                            color: #fff;
+
+                            border-radius: 40px 0px;
+
+                            background: #5CB85C;
+
+                            color: #fff!important;
+
+                        }
+
+                    </style>
+
+
+
+
+
+    
+
+      </aside>
+
+    </section>
+
+    
+
+    <footer class="footer">
+
+      <div class="footer-inner">
+
+        <div style="padding:0 20px;overflow:hidden;">
+
+          <div class="copyright pull-left">
+
+            
+
+            <a href="/about/">关于</a> | 
+
+            
+
+            <a href="/xx/">学习</a> | 
+
+            
+
+            <a href="/tp/">娱乐</a> | 
+
+            
+
+            <a href="/cz/">成长</a> | 
+
+            
+
+            <a>Copyright © 2016, zhangbing All Rights Reserved. </a>| <a href="http://www.miitbeian.gov.cn/"  target="_blank"  rel="nofollow">苏ICP备16050559号</a> <a target="_blank" href="sitemap.htm">网站地图</a></div>
+
+           <div class="trackcode pull-right"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260588650'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260588650%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div>
+
+        </div>
+
+
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+        $(function(){
+
+            var scrollDiv = document.createElement('div');
+
+            $(scrollDiv).attr('id','toTop').html('<ul><li class="backBtn" title="返回顶部"><a href="javascript:;" class="icon_backTo"></a></li></ul>').appendTo('body');
+
+            $(window).scroll(function(){
+
+                if($(this).scrollTop() > 300){
+
+                    $('.backBtn').fadeIn();
+
+                }else{
+
+                    $('.backBtn').fadeOut();
+
+                }
+
+            });
+
+            $('.backBtn').click(function(){
+
+                $('body,html').animate({scrollTop:0},300);
+
+            })
+
+        })
+
+
+
+        });
+
+    </script>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+(function(){
+
+    var bp = document.createElement('script');
+
+    var curProtocol = window.location.protocol.split(':')[0];
+
+    if (curProtocol === 'https') {
+
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+
+    }
+
+    else {
+
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+
+    }
+
+    var s = document.getElementsByTagName("script")[0];
+
+    s.parentNode.insertBefore(bp, s);
+
+})();
+
+</script>
+
+
+
+
+
+
+
+<script src="https://clientcdn.pushengage.com/core/9562.js"></script><script>_pe.subscribe();</script>
+
+
+
+
+
+
+
+  </body>
+
+</html> 
